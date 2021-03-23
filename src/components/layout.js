@@ -15,9 +15,8 @@ const Layout = ({ location, title, children }) => {
     )
   return (
     <div className="contra_wrap">
-        <main className="hero_section">{children}</main>
-
-      </div>
+        <main className="main">{children}</main>
+    </div>
   )
 }
 

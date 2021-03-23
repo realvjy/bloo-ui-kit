@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Contra Wireframe Kit [Sketch, Figma, Adobe XD, Invision Studio]`,
+    title: `Bloo Low Fidelity Wireframe Kit [Sketch, Figma, Adobe XD]`,
     author: {
       name: `vijay verma.`,
       summary: `building something for fun.`,
     },
-    description: `Open source wireframe kit for quick design and prototyping . Beautifully crafted easy to use wireframe kit with more than 150 mobile components and 50+ screens.`,
-    siteUrl: `https://contrauikit.com`,
+    description: `All in one open source wireframe kit for quick design and prototyping your idea. Its library contains more than 250+ components supporting darkmode and 150+ ready to use mobile screens .`,
+    siteUrl: `https://bloouikit.com`,
     social: {
       twitter: `realvjy`,
     },
@@ -71,6 +71,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-dark-mode',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

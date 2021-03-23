@@ -45,11 +45,11 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: `https://contrauikit.com/preview.jpg`,
+          content: `https://bloouikit.com/preview.jpg`,
         },
         {
           property: `og:title`,
-          content: `Contra Wireframe Kit`,
+          content: `Bloo Low Fidelity Wireframe Kit`,
         },
         {
           property: `og:description`,
@@ -85,7 +85,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: `https://contrauikit.com/preview.jpg`,
+          content: `https://bloouikit.com/preview.jpg`,
         },
       ].concat(meta)}
     />

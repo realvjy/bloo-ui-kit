@@ -29,12 +29,47 @@ $widescreen: 71.25rem; // 1140px
     --emo-out: cubic-bezier(0, .2, .2, 1);
 }
 
+body {
+  --bg: #D6F5FF;
+  --primaryblue: #0093ED;
+  --blue10:#0072B1;
+  --blue20:#7DD8FF;
+  --blue30:#D6F5FF;
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: blue;
+  --nativewhite: #FFFFFF;
+  --nativedark: #00253A;
+  --inversebg: #00253A;
+  --darkbg: #ffffff;
+  --hr: hsla(0, 0%, 0%, 0.2);
+
+  background-color: var(--bg);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: #00314D;
+  --primaryblue: #03A4FF;
+  --blue10:#52C1FF;
+  --blue20:#044468;
+  --blue30:#00314D;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: white;
+  --textLink: yellow;
+  --nativewhite: #FFFFFF;
+  --nativedark: #00253A;
+  --inversebg: #ffffff;
+  --darkbg: #00253A;
+  --hr: hsla(0, 0%, 100%, 0.2);
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   font-size: 100%;
   font: inherit;
-  color: $black;
   vertical-align: baseline;
   box-shadow: none;
  }
@@ -75,8 +110,7 @@ html,  body{
   font-weight: 500;
   width: 100%;
   height: 100%;
-  background: $light-blue;
-  color: $blue;
+  color: var(--primaryblue);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -113,12 +147,12 @@ section{
 }
 ::-moz-selection { /* Code for Firefox */
   color: $yellow;
-  background: $blue;
+  background: var(--primaryblue);
 }
 
 ::selection {
-  color: $yellow;
-  background: $blue;
+  color: var(--darkbg);
+  background: var(--primaryblue);
 }
 
 .contra_wrap{
@@ -171,8 +205,13 @@ section{
 
 
 .hero_section{
+  overflow: hidden;
+
   .hero_wrapper{
     padding-top: 100px;
+    @media (max-width: $mobile-landscape){
+      padding-top: 0;
+    }
     .hero_img{
       position: absolute;
       top: 0px;
@@ -185,8 +224,10 @@ section{
         right: 10px;
       }
       @media (max-width: $mobile-landscape){
+        width: 100%;
         position: relative;
         text-align: center;
+        margin-top: 0;
       }
       img{
         width: 500px;
@@ -201,6 +242,8 @@ section{
       }
     }
     .hero_details{
+      padding: 24px;
+      padding-bottom: 120px;
       width: 55%;
       @media (max-width: $tablet-wide){
         width: 100%;
@@ -208,9 +251,14 @@ section{
       }
       @media (max-width: $mobile-landscape){
         padding: 0;
+        width: 100%;
+        text-align: center;
       }
 
       .texts{
+        @media (max-width: $mobile-landscape){
+          margin-top: 24px;
+        }
         img{
           height: 50px;
         }
@@ -232,7 +280,7 @@ section{
           padding-top: 16px;
           margin-bottom: 10px;
           letter-spacing: -1px;
-          color: #0072B1;
+          color: var(--blue10);
           @media (max-width: $mobile-landscape){
             font-size: 40px;
             margin-top: 12px;
@@ -245,7 +293,7 @@ section{
         p{
           margin: 22px 0;
           font-size: 20px;
-          color: #0072B1;
+          color: var(--blue10);
           line-height: 150%;
           font-weight: 400;
           padding-right: 40px;
@@ -262,46 +310,55 @@ section{
         }
       }
 
-      .compatible{
-        margin: 36px 0;
+      .license-box{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 40px;
         @media (max-width: $mobile-landscape){
-          padding: 12px;
+          flex-direction: column;
         }
-        .p-logo{
+        .compatible{
           @media (max-width: $mobile-landscape){
-            display: flex;
-            justify-content: space-between;
-            padding: 0 24px;
+            padding: 12px;
           }
-          img{
-            height: 30px;
-            padding: 0px 8px;
+          .p-logo{
+            @media (max-width: $mobile-landscape){
+              display: flex;
+              justify-content: space-between;
+              padding: 0 24px;
+            }
+            img{
+              height: 30px;
+              padding: 0px 8px;
+            }
           }
         }
-      }
-
-      .license{
-        margin-top: 16px;
-        @media (max-width: $mobile-landscape){
-          text-align: center;
-        }
-        p{
-          color: #03A4FF;
-          font-size: 14px;
-          font-weight: 400;
+        .license{
+          width: 300px;
+          margin-left: 12px;
           @media (max-width: $mobile-landscape){
-            font-size: 12px;
-            max-width: 300px;
-            margin: 0 auto;
+            text-align: center;
           }
-          a{
+          p{
             color: #03A4FF;
-            font-weight: 600;
-            margin-right: 12px;
-            margin-left: 12px;
-            border-bottom: 1px dotted $grey;
-            &:hover{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+            @media (max-width: $mobile-landscape){
+              font-size: 12px;
+              max-width: 300px;
+              margin: 0 auto;
+            }
+            a{
+              color: #03A4FF;
+              font-weight: 600;
+              margin-right: 12px;
+              margin-left: 2px;
+              border-bottom: 1px dotted var(--blue10);
+              &:hover{
 
+              }
             }
           }
         }
@@ -310,14 +367,63 @@ section{
   }
 }
 
+.nav{
+  padding: 24px 0;
+}
+
+.features_section{
+  background: var(--darkbg);
+  z-index: 1111;
+
+  .feature_box{
+    padding: 80px 24px ;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: $mobile-landscape){
+      flex-direction: column;
+      margin-top: 80px;
+    }
+    .f_box{
+      width: 25%;
+      @media (max-width: $mobile-landscape){
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      .box_wrap{
+        padding: 12px;
+        text-align: center;
+        h2{
+          font-size: 62px;
+          font-weight: 800;
+          color: var(--primaryblue);
+          @media (max-width: $mobile-landscape){
+            font-size: 54px;
+          }
+        }
+        h4{
+          margin-top: 8px;
+          font-size: 21px;
+          font-weight: 300;
+          color: var(--primaryblue);
+          opacity: .8;
+          @media (max-width: $mobile-landscape){
+            font-size: 16px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .footer{
-  background: $black;
-  color: $white;
-  margin-top: 120px;
+
+  background: var(--primaryblue);
+  color: var(--nativewhite);
   padding-top: 30px;
   padding-bottom: 30px;
   @media (max-width: $mobile-landscape){
-    margin-top: 30px;
   }
   .disclamer{
     padding: 24px;
@@ -494,7 +600,7 @@ section{
     letter-spacing: 1px;
   }
   &.btn-download{
-    background: $blue;
+    background: var(--primaryblue);
     border:1px solid $blue;
     padding: 22px 36px;
     cursor: pointer;
@@ -520,7 +626,7 @@ section{
     }
   }
   &.btn-coffee{
-    background: $light-blue;
+    background: var(--nativewhite);
 
     border:1px solid $blue;
     padding: 22px;
@@ -667,6 +773,54 @@ section{
             margin: 0 auto;
         }
       }
+    }
+  }
+}
+
+
+.mode-toggle{
+  margin-left: 22px;
+  input[type=checkbox]{
+    width: 38px;
+    height: 20px;
+    background-color: #fff;
+    -webkit-appearance:none;
+    border-radius: 24px;
+    border: 3px solid var(--blue20);
+    outline: none;
+    position: relative;
+    font-weight: bolder;
+    font-size: 22px;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: var(--primaryblue);
+        background-image: url("/moon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        left: -5px;
+        top:-5px;
+        transition-duration: .5s;
+    }
+  }
+
+  input:checked[type=checkbox]{
+    background-color: var(--blue30);
+    border: 3px solid var(--blue20);
+    &:before{
+        content: '';
+        background-color: var(--primaryblue);
+        -webkit-box-shadow: 0 0 8px rgba(0,147,237,.8);
+        -moz-box-shadow: 0 0 8px rgba(0,147,237,.8);
+        box-shadow: 0 0 8px rgba(0,147,237,.8);
+        left: 12px;
+        transition-duration: .5s;
+        color:#555;
     }
   }
 }

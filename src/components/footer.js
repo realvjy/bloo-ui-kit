@@ -20,17 +20,15 @@ const Footer = () => {
               </a>
             </div>
             <div className="product-box">
+              <a href="https://contrauikit.com/?ref=bloouikit" target="__blank" className="p-box">
+                <img src="/contra.png" />
+              </a>
+            </div>
+            <div className="product-box">
               <a href="https://uiprint.co/?ref=contra-uikit" target="__blank" className="p-box">
                 <img src="/uiprint.png" />
               </a>
             </div>
-
-            <div className="product-box">
-              <a href="https://instagram.com/uihues?ref=contra-uikit" target="__blank" className="p-box">
-                <img src="/uihues.png" />
-              </a>
-            </div>
-
             <div className="product-box">
               <a href="https://uilogos.co/?ref=contra-uikit" className="p-box"target="__blank" >
                 <img src="/uilogos.png" />
@@ -50,9 +48,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="spl-credit">
-          <p>Special Credit <span><a href="https://twitter.com/pablostanley" target="_blank">Pablo Stanley</a> • <a href="https://www.openpeeps.com/?ref=contrauikit" target="_blank">openpeeps</a></span></p>
-        </div>
+
         </div>
       </div>
     </footer>

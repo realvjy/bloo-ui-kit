@@ -1,7 +1,7 @@
 {
-  "name": "contra-ui-kit",
+  "name": "bloo-ui-kit",
   "private": true,
-  "description": "contra wireframe kit. Open source wireframe kit for quick design and prototyping . Beautiful easy to use wireframe UI kit with more than 150 mobile components and 50+ screens.",
+  "description": "All in one open source wireframe kit for quick design and prototyping your idea. Its library contains more than 250+ components supporting darkmode and 150+ ready to use mobile screens .",
   "version": "0.1.0",
   "author": "vijay verma <hello@vijayverma.co>",
   "bugs": {
@@ -10,6 +10,7 @@
   "dependencies": {
     "gatsby": "^2.32.3",
     "gatsby-image": "^2.11.0",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-feed": "^2.13.0",
     "gatsby-plugin-google-analytics": "^2.11.0",
     "gatsby-plugin-manifest": "^2.12.0",
