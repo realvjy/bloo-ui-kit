@@ -749,7 +749,7 @@ section{
 .announce-wrapper{
   &.ph{
     // background: #da552f;
-    background: $black;
+    background: var(--primaryblue);
   }
   .an-details{
     text-align: center;

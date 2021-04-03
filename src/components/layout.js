@@ -7,9 +7,7 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header = (
       <>
-      <div className="announce-wrapper ph">
-
-      </div>
+      
 
       </>
     )

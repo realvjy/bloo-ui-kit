@@ -18,8 +18,17 @@ const BlogIndex = ({ data, location }) => {
         <script src={withPrefix('sound.js')} type="text/javascript" loop />
       </Helmet>
       <>
+      <div className="announce-wrapper ph">
+        <div className="container">
+          <div className="an-details">
+            <p><img src="/ph-logo.png"/>Featured on Product hunt <a href="https://www.producthunt.com/posts/bloo-lo-fi-wireframe-kit?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bloo-lo-fi-wireframe-kit" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=290589&theme=light" alt="Bloo Lo-fi Wireframe Kit - Open source wireframe kit for design and prototyping 🚀 | Product Hunt"  width="250" height="54"/></a>
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="nav">
         <div className="container">
+
         <ThemeToggler>
               {({ theme, toggleTheme }) => (
                 <div className="mode-toggle">
@@ -37,6 +46,7 @@ const BlogIndex = ({ data, location }) => {
         </div>
       </div>
       <section className="hero_section">
+
         <div className="container">
           <div className="hero_wrapper">
             <div className="hero_img">
