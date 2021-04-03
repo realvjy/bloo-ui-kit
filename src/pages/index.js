@@ -50,7 +50,11 @@ const BlogIndex = ({ data, location }) => {
         <div className="container">
           <div className="hero_wrapper">
             <div className="hero_img">
-            <img src={window.localStorage.theme === "light" ? "light.png": "dark.png"} />
+            <picture>
+              <source srcset="dark.png" media="(prefers-color-scheme: dark)" />
+              <source srcset="light.png" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+              <img id="screenshot" src="light.png" />
+            </picture>
             </div>
             <div className="hero_details">
               <div className="texts">
@@ -103,8 +107,8 @@ const BlogIndex = ({ data, location }) => {
             </div>
             <div className="f_box">
                 <div className="box_wrap">
-                  <h2>20+</h2>
-                  <h4>Flowc <br/>& Arrows</h4>
+                  <h2>10+</h2>
+                  <h4>Flowchart <br/>& Arrow Example</h4>
                 </div>
             </div>
             <div className="f_box">
