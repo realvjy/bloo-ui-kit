@@ -10,7 +10,6 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  const currentTheme = localStorage.theme
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Bloo Low Fidelity Wireframe Kit" />
