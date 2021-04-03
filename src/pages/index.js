@@ -10,7 +10,7 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
+  const currentTheme = localStorage.theme
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Bloo Low Fidelity Wireframe Kit" />
@@ -50,10 +50,7 @@ const BlogIndex = ({ data, location }) => {
         <div className="container">
           <div className="hero_wrapper">
             <div className="hero_img">
-              <picture>
-                <source srcset="/dark.png" media="(prefers-color-scheme: dark)" />
-                <img src="/light.png" />
-              </picture>
+            <img src={window.localStorage.theme === "light" ? "light.png": "dark.png"} />
             </div>
             <div className="hero_details">
               <div className="texts">
@@ -106,7 +103,7 @@ const BlogIndex = ({ data, location }) => {
             </div>
             <div className="f_box">
                 <div className="box_wrap">
-                  <h2>20+</h2>
+                  <h2>10+</h2>
                   <h4>Flowchart <br/>Example</h4>
                 </div>
             </div>
