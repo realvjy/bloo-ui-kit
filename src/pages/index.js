@@ -98,13 +98,13 @@ const BlogIndex = ({ data, location }) => {
             <div className="f_box">
                 <div className="box_wrap">
                   <h2>150+</h2>
-                  <h4>Predefined <br/>Screens</h4>
+                  <h4><br/>Screen Templates</h4>
                 </div>
             </div>
             <div className="f_box">
                 <div className="box_wrap">
-                  <h2>10+</h2>
-                  <h4>Flowchart <br/>Example</h4>
+                  <h2>20+</h2>
+                  <h4>Flowc <br/>& Arrows</h4>
                 </div>
             </div>
             <div className="f_box">
