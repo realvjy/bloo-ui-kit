@@ -40,7 +40,10 @@ const BlogIndex = ({ data, location }) => {
         <div className="container">
           <div className="hero_wrapper">
             <div className="hero_img">
-              <img src="/bloo-cards-light.png" />
+              <picture>
+                <source srcset="/dark.png" media="(prefers-color-scheme: dark)" />
+                <img src="/light.png" />
+              </picture>
             </div>
             <div className="hero_details">
               <div className="texts">
@@ -52,9 +55,13 @@ const BlogIndex = ({ data, location }) => {
               <div className="btn-lnks">
                 <div className="dwn-links">
                   <button className="btn btn-download">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDOgz-4-5e_XKfa5Nrbt06KNCQFFuNOa39_W2jvcsp7CjKRQ/viewform"><h4>Early access</h4></a>
+                    <h4>Download now</h4>
                   </button>
-
+                  <ul className="dwn-list">
+                    <li><a href="http://bit.ly/bloouikit-figma"><img src="/figma.png"/> Figma</a></li>
+                    <li><a href="http://bit.ly/bloouikit-sketch"><img src="/sketch.png"/> Sketch</a></li>
+                    <li><a href="http://bit.ly/bloouikit-XD"><img src="/xd.png"/> Adobe XD</a></li>
+                  </ul>
                 </div>
                 <a href="https://www.buymeacoffee.com/realvjy" className="btn btn-coffee">
                   <h4>Buy me a coffee</h4>
