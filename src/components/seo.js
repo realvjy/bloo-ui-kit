@@ -41,7 +41,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `keywords`,
-          content: `wireframe, uikit, open source wireframe kit, contra wireframe kit, free uikit, sketch uikit, figma uikit, realvjy, free wireframe downnload, free sketch uikit, free figma wireframe kit, download wireframe kit, open source uikit, uikit`,
+          content: `wireframe, uikit, open source wireframe kit, bloo wireframe kit, free uikit, sketch uikit, figma uikit, realvjy, free wireframe downnload, free sketch uikit, free figma wireframe kit, download wireframe kit, open source uikit, uikit`,
         },
         {
           property: `og:image`,
@@ -49,7 +49,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:title`,
-          content: `Bloo Low Fidelity Wireframe Kit`,
+          content: `Bloo Lo-Fi Wireframe Kit`,
         },
         {
           property: `og:description`,
@@ -77,7 +77,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:title`,
-          content: `Contra Wireframe Kit`,
+          content: `Bloo Lo-Fi Wireframe Kit`,
         },
         {
           name: `twitter:description`,
