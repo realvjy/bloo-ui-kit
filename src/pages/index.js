@@ -70,9 +70,9 @@ const BlogIndex = ({ data, location }) => {
                     <h4>Download now</h4>
                   </button>
                   <ul className="dwn-list">
-                    <li><a href="http://bit.ly/bloouikit-figma"><img src="/figma.png"/> Figma</a></li>
-                    <li><a href="http://bit.ly/bloouikit-sketch"><img src="/sketch.png"/> Sketch</a></li>
-                    <li><a href="http://bit.ly/bloouikit-XD"><img src="/xd.png"/> Adobe XD</a></li>
+                    <li><a href="https://bit.ly/bloouikit-figma" target="_blank"><img src="/figma.png"/> Figma</a></li>
+                    <li><a href="https://bit.ly/bloouikit-sketch" target="_blank"><img src="/sketch.png"/> Sketch</a></li>
+                    <li><a href="https://bit.ly/bloouikit-XD" target="_blank"><img src="/xd.png"/> Adobe XD</a></li>
                   </ul>
                 </div>
                 <a href="https://www.buymeacoffee.com/realvjy" className="btn btn-coffee">
