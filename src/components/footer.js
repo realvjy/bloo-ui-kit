@@ -15,7 +15,7 @@ const Footer = () => {
           <h2>Other Products</h2>
           <div className="product-wrap">
             <div className="product-box">
-              <a href="https://illlustrations.co/?ref=contra-uikit" target="__blank" className="p-box">
+              <a href="https://illlustrations.co/?ref=bloouikit" target="__blank" className="p-box">
                 <img src="/illlustrations.png" />
               </a>
             </div>
@@ -25,12 +25,12 @@ const Footer = () => {
               </a>
             </div>
             <div className="product-box">
-              <a href="https://uiprint.co/?ref=contra-uikit" target="__blank" className="p-box">
+              <a href="https://uiprint.co/?ref=bloouikit" target="__blank" className="p-box">
                 <img src="/uiprint.png" />
               </a>
             </div>
             <div className="product-box">
-              <a href="https://uilogos.co/?ref=contra-uikit" className="p-box"target="__blank" >
+              <a href="https://uilogos.co/?ref=bloouikit" className="p-box" target="__blank" >
                 <img src="/uilogos.png" />
               </a>
             </div>

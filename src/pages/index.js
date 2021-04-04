@@ -17,7 +17,7 @@ const BlogIndex = ({ data, location }) => {
         <script src={withPrefix('sound.js')} type="text/javascript" loop />
       </Helmet>
       <>
-      
+
       <div className="top-nav">
         <div className="container">
           <div className="nav-box">
@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
               </ThemeToggler>
               <ul className="buttons links">
                 <li>
-                  <a className="btn-social" href="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=290589&theme=light"><img src="/ph-badge.png" /></a>
+                  <a className="btn-social" href="https://www.producthunt.com/posts/bloo-lo-fi-wireframe-kit"><img src="/ph-badge.png" /></a>
                 </li>
                 <li>
                   <a className="btn-social" href="https://twitter.com/intent/tweet?text=Design%20awesome%20wireframes%20with%20Bloo%20Lo-fi%20Wireframe%20Kit%20https%3A%2F%2Fbloouikit.com%20by%20%40realvjy%20"><img src="/twitter-share.png" /></a>
